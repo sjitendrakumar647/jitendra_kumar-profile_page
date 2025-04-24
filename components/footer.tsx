@@ -43,7 +43,7 @@ export function Footer() {
               <ArrowUp className="h-5 w-5" />
             </button>
             <p className="text-foreground/50 text-sm">
-              &copy; {new Date().getFullYear()} John Doe. All rights reserved.
+              &copy; {new Date().getFullYear()} Jitendra Kumar. All rights reserved.
             </p>
           </motion.div>
         </div>
