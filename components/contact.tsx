@@ -149,6 +149,8 @@ export function Contact() {
                 <h3 className="text-xl font-semibold mb-6">Send Me a Message</h3>
 
                 <form className="space-y-6" action="https://getform.io/f/bjjmpvzb" method="POST">
+                {/* below website handel form submission
+                 https://app.getform.io/forms/bjjmpvzb */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium">

@@ -23,7 +23,7 @@ export function Footer() {
             className="mb-6 md:mb-0"
           >
             <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
-              John Doe
+              Jitendra Kumar
             </h3>
             <p className="text-foreground/70 mt-2">Software Engineer | MCA Graduate</p>
           </motion.div>
