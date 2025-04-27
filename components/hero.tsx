@@ -48,7 +48,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500"
           >
-            John Doe
+            Jitendra Kumar
           </motion.h1>
 
           <motion.div

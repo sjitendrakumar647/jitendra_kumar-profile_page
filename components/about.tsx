@@ -21,9 +21,10 @@ export function About() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center justify-center">
             <User className="mr-2 text-indigo-400" size={28} />
-            About Me
+            About <span>&nbsp;</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500"> Me</span>
           </h2>
-          <div className="h-1 w-20 bg-indigo-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mb-8 rounded"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -48,8 +49,8 @@ export function About() {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-4 text-indigo-400">Software Engineer & Full-Stack Developer</h3>
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <h3 className="text-2xl font-bold mb-4 text-indigo-500">Software Engineer & Full-Stack Developer</h3>
+            <p className="text-gray-500 mb-6 leading-relaxed">
               I am a passionate Software Engineer with an MCA degree and expertise in full-stack development. With a
               strong foundation in computer science principles and a knack for problem-solving, I create efficient,
               scalable, and user-friendly applications.
@@ -60,14 +61,14 @@ export function About() {
                 <GraduationCap className="mt-1 mr-3 text-indigo-400" size={20} />
                 <div>
                   <h4 className="font-semibold">Master of Computer Applications (MCA)</h4>
-                  <p className="text-gray-400">Trident Academy of Technology | 2023 - 2025</p>
+                  <p className="text-gray-500">Trident Academy of Technology | 2023 - 2025</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <Briefcase className="mt-1 mr-3 text-indigo-400" size={20} />
                 <div>
                   <h4 className="font-semibold">Start career as a fresher</h4>
-                  <p className="text-gray-400">
+                  <p className="text-gray-500">
                     Working with enterprise-level applications and modern web technologies
                   </p>
                 </div>

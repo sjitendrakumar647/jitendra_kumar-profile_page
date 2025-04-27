@@ -44,7 +44,7 @@ export function Contact() {
                     </div>
                     <div>
                       <h4 className="font-medium">Location</h4>
-                      <p className="text-foreground/70">Bangalore, India</p>
+                      <p className="text-foreground/70">Bhubaneswar, India</p>
                     </div>
                   </div>
 
@@ -54,7 +54,7 @@ export function Contact() {
                     </div>
                     <div>
                       <h4 className="font-medium">Email</h4>
-                      <p className="text-foreground/70">johndoe@example.com</p>
+                      <p className="text-foreground/70">sjitendrakumar647@gmail.com</p>
                     </div>
                   </div>
 
@@ -64,7 +64,7 @@ export function Contact() {
                     </div>
                     <div>
                       <h4 className="font-medium">Phone</h4>
-                      <p className="text-foreground/70">+91 9876543210</p>
+                      <p className="text-foreground/70">+91 7327874702</p>
                     </div>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export function Contact() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-6">Send Me a Message</h3>
 
-                <form className="space-y-6">
+                <form className="space-y-6" action="https://getform.io/f/bjjmpvzb" method="POST">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium">
@@ -156,7 +156,10 @@ export function Contact() {
                       </label>
                       <Input
                         id="name"
-                        placeholder="John Doe"
+                        name="name"
+                        type="text"
+                        required
+                        placeholder="for example: John Doe"
                         className="bg-background/50 border-foreground/10 focus:border-purple-500"
                       />
                     </div>
@@ -168,6 +171,9 @@ export function Contact() {
                       <Input
                         id="email"
                         type="email"
+                        name="email"
+                        autoComplete="email"
+                        required
                         placeholder="john@example.com"
                         className="bg-background/50 border-foreground/10 focus:border-purple-500"
                       />
@@ -180,6 +186,8 @@ export function Contact() {
                     </label>
                     <Input
                       id="subject"
+                      name="subject"
+                      type="text"
                       placeholder="How can I help you?"
                       className="bg-background/50 border-foreground/10 focus:border-purple-500"
                     />
@@ -192,6 +200,8 @@ export function Contact() {
                     <Textarea
                       id="message"
                       placeholder="Your message here..."
+                      name="message"
+                      required
                       className="bg-background/50 border-foreground/10 focus:border-purple-500 min-h-[150px]"
                     />
                   </div>
