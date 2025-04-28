@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 import { TypeAnimation } from "react-type-animation"
 
+
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
@@ -26,7 +27,7 @@ export function Hero() {
             <div className="inline-block relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-xl opacity-75 animate-pulse"></div>
               <img
-                src="/placeholder.svg?height=150&width=150"
+                src="/avatar.png?height=150&width=150"
                 alt="Profile"
                 className="relative w-32 h-32 rounded-full border-4 border-background"
               />
@@ -63,11 +64,11 @@ export function Hero() {
                 1000,
                 "Java Developer",
                 1000,
-                "Python Developer",
-                1000,
                 "MERN Stack Developer",
                 1000,
                 "PHP Developer",
+                1000,
+                "SAP ABAP Backend Developer",
                 1000,
               ]}
               wrapper="span"
@@ -100,9 +101,11 @@ export function Hero() {
               Explore My Work
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline">
-              Contact Me
-            </Button>
+            <a href="#contact">
+              <Button size="lg" variant="outline">
+                Contact Me
+              </Button>
+            </a>
           </motion.div>
 
           <motion.div
@@ -126,7 +129,7 @@ export function Hero() {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="#"
+              href="#contact"
               className="bg-foreground/5 hover:bg-foreground/10 p-3 rounded-full transition-colors"
               aria-label="Email"
             >

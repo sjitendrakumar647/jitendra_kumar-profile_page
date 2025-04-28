@@ -93,7 +93,7 @@ export function Skills() {
             <motion.div
               key={index}
               // variants={itemVariants}
-              className="bg-indigo-200/50 p-6 rounded-xl border border-gray-700 hover:border-indigo-500/50 hover:bg-indigo-300/50 transition-colors duration-300"
+              className="bg-indigo-200/20 p-6 rounded-xl border border-gray-700 hover:border-indigo-500/50 hover:bg-indigo-200/40 hover:shadow-sm transition-all hover:-translate-y-0.5 duration-300"
             >
               <div className="flex items-center mb-6">
                 {skillGroup.icon}
@@ -143,14 +143,10 @@ export function Skills() {
               viewport={{ once: true }}
               whileHover={{ y: -7, scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex flex-col items-center justify-center p-4 bg-foreground/5 rounded-lg border border-foreground/10 hover:border-purple-500/50 transition-all shadow-md hover:shadow-lg"
+              className="flex flex-col items-center justify-center p-4 bg-foreground/5 rounded-lg border border-foreground/10 hover:border-purple-500/50 transition-all shadow-md hover:shadow-lg "
             >
               <div className="w-12 h-12 mb-3 flex items-center justify-center">
-                {/* <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="max-w-full max-h-full"
-                /> */}
+                
                 {tech.icon}
               </div>
               <span className="text-sm font-medium">{tech.name}</span>
