@@ -10,6 +10,33 @@ export function Projects() {
   const { ref, controls, variants } = useAnimateInView()
 
   const projects = [
+        {
+      title: "Edusphere, An E-Learning Platform",
+      description:
+        "A PHP-based e-learning platform with user authentication, course management, and interactive quizzes. Features responsive design and SEO optimization.",
+      image: "/edusphere.jpg?height=400&width=600&text=Edusphere",
+      tags: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
+      github: "https://github.com/sjitendrakumar647/lms_php_name_edusphere.git",
+      demo: "#",
+    },
+    {
+      title: "Chat Application",
+      description:
+        "Real-time chat application built with Socket.io and React. Features include private messaging, group chats, and message notifications.",
+      image: "/chat.svg?height=400&width=600&text=Chat+App",
+      tags: ["React", "Node.js", "Socket.io", "MongoDB"],
+      github: "https://github.com/sjitendrakumar647/MERN_Chattrix_Chat_Application.git",
+      demo: "#",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "A responsive portfolio website built with Three.js and Tailwind CSS. Features animated transitions and interactive elements.",
+      image: "/portfolio.jpg?height=400&width=600&text=Portfolio",
+      tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/sjitendrakumar647/profile.git",
+      demo: "#",
+    },
     {
       title: "E-Commerce Platform",
       description:
@@ -37,33 +64,7 @@ export function Projects() {
       github: "#",
       demo: "#",
     },
-    {
-      title: "Edusphere, An E-Learning Platform",
-      description:
-        "A PHP-based e-learning platform with user authentication, course management, and interactive quizzes. Features responsive design and SEO optimization.",
-      image: "https://www.freepik.com/free-photo/young-asia-financial-student-ladies-watching-lesson-online-studying-with-laptop-tablet-living-room-from-home-night_17897394.htm#fromView=search&page=1&position=37&uuid=753d7624-8092-4290-8b32-a296faa72b24&query=online+learning",
-      tags: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
-      github: "https://github.com/sjitendrakumar647/lms_php_name_edusphere.git",
-      demo: "#",
-    },
-    {
-      title: "Chat Application",
-      description:
-        "Real-time chat application built with Socket.io and React. Features include private messaging, group chats, and message notifications.",
-      image: "/placeholder.svg?height=400&width=600&text=Chat+App",
-      tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "https://github.com/sjitendrakumar647/MERN_Chattrix_Chat_Application.git",
-      demo: "#",
-    },
-    {
-      title: "Portfolio Website",
-      description:
-        "A responsive portfolio website built with Three.js and Tailwind CSS. Features animated transitions and interactive elements.",
-      image: "/placeholder.svg?height=400&width=600&text=Portfolio",
-      tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/sjitendrakumar647/profile.git",
-      demo: "#",
-    },
+
   ]
 
   return (
@@ -141,10 +142,12 @@ export function Projects() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button size="lg" variant="outline" className="border-purple-500 text-purple-500 hover:bg-purple-500/10">
-            View All Projects
-            <ExternalLink className="ml-2 h-4 w-4" />
-          </Button>
+          <a href="#projects" className="inline-block">
+            <Button size="lg" variant="outline" className="border-purple-500 text-purple-500 hover:bg-purple-500/10">
+              View All Projects
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
         </motion.div>
       </div>
     </section>
