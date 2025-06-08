@@ -41,7 +41,7 @@ export function Projects() {
       title: "Edusphere, An E-Learning Platform",
       description:
         "A PHP-based e-learning platform with user authentication, course management, and interactive quizzes. Features responsive design and SEO optimization.",
-      image: "/placeholder.svg?height=400&width=600&text=Blog+Platform",
+      image: "https://www.freepik.com/free-photo/young-asia-financial-student-ladies-watching-lesson-online-studying-with-laptop-tablet-living-room-from-home-night_17897394.htm#fromView=search&page=1&position=37&uuid=753d7624-8092-4290-8b32-a296faa72b24&query=online+learning",
       tags: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
       github: "https://github.com/sjitendrakumar647/lms_php_name_edusphere.git",
       demo: "#",
