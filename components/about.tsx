@@ -10,7 +10,7 @@ export function About() {
   const { ref, controls, variants } = useAnimateInView()
 
   return (
-    <section id="about" className="py-20 px-20">
+    <section id="about" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,7 +36,7 @@ export function About() {
             className="relative"
           >
             <div className="relative w-full h-[400px] rounded-lg overflow-hidden border border-indigo-500/20">
-              <Image src="/avatar2.png?height=1000&width=400" alt="Profile" fill className="object-cover" />
+              <Image src="/avatar2.png?height=400&width=400" alt="Profile" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
             </div>
             <div className="absolute -bottom-5 -right-5 w-32 h-32 bg-indigo-500/10 rounded-full border border-indigo-500/20 backdrop-blur-sm"></div>

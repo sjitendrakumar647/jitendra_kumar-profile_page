@@ -38,12 +38,12 @@ export function Projects() {
       demo: "#",
     },
     {
-      title: "Blog Platform",
+      title: "Edusphere, An E-Learning Platform",
       description:
-        "A PHP-based blogging platform with user authentication, content management, and commenting system. Features responsive design and SEO optimization.",
+        "A PHP-based e-learning platform with user authentication, course management, and interactive quizzes. Features responsive design and SEO optimization.",
       image: "/placeholder.svg?height=400&width=600&text=Blog+Platform",
       tags: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
-      github: "#",
+      github: "https://github.com/sjitendrakumar647/lms_php_name_edusphere.git",
       demo: "#",
     },
     {
@@ -52,7 +52,7 @@ export function Projects() {
         "Real-time chat application built with Socket.io and React. Features include private messaging, group chats, and message notifications.",
       image: "/placeholder.svg?height=400&width=600&text=Chat+App",
       tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "#",
+      github: "https://github.com/sjitendrakumar647/MERN_Chattrix_Chat_Application.git",
       demo: "#",
     },
     {
@@ -61,7 +61,7 @@ export function Projects() {
         "A responsive portfolio website built with Three.js and Tailwind CSS. Features animated transitions and interactive elements.",
       image: "/placeholder.svg?height=400&width=600&text=Portfolio",
       tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      github: "#",
+      github: "https://github.com/sjitendrakumar647/profile.git",
       demo: "#",
     },
   ]
