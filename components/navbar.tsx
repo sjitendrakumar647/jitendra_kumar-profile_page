@@ -63,7 +63,7 @@ export function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.8 }}
           >
-            <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600">
+            <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600" onClick={() => window.open("/Jitendra_Kumar_Swain_Resume.pdf", "_blank")}>
               Resume
             </Button>
           </motion.div>
@@ -102,9 +102,9 @@ export function Navbar() {
                 {item.name}
               </a>
             ))}
-            <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 w-full">
-              Resume
-            </Button>
+              <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 w-full" onClick={() => window.open("/Jitendra_Kumar_Swain_Resume.pdf", "_blank")}>
+                Resume
+              </Button>
           </div>
         </motion.div>
       )}
