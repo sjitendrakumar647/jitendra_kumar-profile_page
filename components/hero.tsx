@@ -15,6 +15,10 @@ export function Hero() {
         <div className="absolute bottom-1/4 -right-10 w-72 h-72 bg-pink-500/20 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
         <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-blue-500/20 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
       </div>
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(67,67,255,0.15),rgba(0,0,0,0))]"></div>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
+      </div>
 
       <div className="container mx-auto px-4 z-10">
         <div className="flex flex-col items-center text-center">
