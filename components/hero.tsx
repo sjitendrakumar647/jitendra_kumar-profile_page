@@ -27,7 +27,7 @@ export function Hero() {
             <div className="inline-block relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-xl opacity-75 animate-pulse"></div>
               <img
-                src="/avatar.png?height=150&width=150"
+                src="https://cdn.pixabay.com/photo/2022/06/05/07/04/person-7243410_1280.png?height=150&width=150"
                 alt="Profile"
                 className="relative w-32 h-32 rounded-full border-4 border-background"
               />

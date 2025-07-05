@@ -38,6 +38,15 @@ export function Projects() {
       demo: "#",
     },
     {
+      title: "Hospital Management System",
+      description:
+        "A Hospital Management System using JDBC efficiently manages patient records, appointments, billing, and staff data with secure database connectivity in Java.",
+      image: "https://www.karexpert.com/wp-content/uploads/2022/01/HIMS7-1.jpg?height=400&width=600&text=Hospital+Management",
+      tags: ["Java", "MySQL", "JDBC"],
+      github: "https://github.com/sjitendrakumar647/HospitalManagementSystem.git",
+      demo: "#",
+    },
+    {
       title: "E-Commerce Platform",
       description:
         "A full-stack e-commerce platform built with the MERN stack. Features include user authentication, product catalog, shopping cart, and payment integration.",
@@ -46,15 +55,7 @@ export function Projects() {
       github: "#",
       demo: "#",
     },
-    {
-      title: "Task Management System",
-      description:
-        "A Java-based task management application with a responsive UI. Allows users to create, assign, and track tasks with deadline notifications.",
-      image: "/placeholder.svg?height=400&width=600&text=Task+Manager",
-      tags: ["Java", "Spring Boot", "MySQL", "Thymeleaf"],
-      github: "#",
-      demo: "#",
-    },
+    
     {
       title: "Weather Forecast App",
       description:
