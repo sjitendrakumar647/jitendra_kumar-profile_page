@@ -102,7 +102,7 @@ export function Navbar() {
                 {item.name}
               </a>
             ))}
-              <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 w-full" onClick={() => window.open("/Jitendra_Kumar_Swain_Resume.pdf", "_blank")}>
+              <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 w-full" >
                 Resume
               </Button>
           </div>

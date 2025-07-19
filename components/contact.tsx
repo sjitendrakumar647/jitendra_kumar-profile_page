@@ -73,7 +73,7 @@ export function Contact() {
                   <h4 className="font-medium mb-4">Connect with me</h4>
                   <div className="flex space-x-4">
                     <a
-                      href="#"
+                      href="https://github.com/sjitendrakumar647"
                       className="bg-foreground/5 hover:bg-foreground/10 p-3 rounded-full transition-colors"
                       aria-label="GitHub"
                     >
