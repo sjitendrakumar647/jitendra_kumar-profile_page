@@ -2,11 +2,20 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 import { TypeAnimation } from "react-type-animation"
 
 
 export function Hero() {
+
+  const handleScroll = () => {
+    const el = document.getElementById("projects")
+    el?.scrollIntoView({ behavior: "smooth" })
+  }
+  const Scroll = () => {
+    const el = document.getElementById("work")
+    el?.scrollIntoView({ behavior: "smooth" })
+  }
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background animated elements */}
@@ -31,7 +40,7 @@ export function Hero() {
             <div className="inline-block relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-xl opacity-75 animate-pulse"></div>
               <img
-                src="https://cdn.pixabay.com/photo/2022/06/05/07/04/person-7243410_1280.png?height=150&width=150"
+                src="./avatar.png"
                 alt="Profile"
                 className="relative w-32 h-32 rounded-full border-4 border-background"
               />
@@ -99,7 +108,9 @@ export function Hero() {
             className="flex flex-wrap gap-4 justify-center"
           >
             <Button
+            onClick={handleScroll}
               size="lg"
+              id="work"
               className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 group"
             >
               Explore My Work
@@ -110,6 +121,15 @@ export function Hero() {
                 Contact Me
               </Button>
             </a>
+          </motion.div>
+
+          <motion.div
+            className="absolute bottom-5 left-1/2 transform -translate-x-1/2 cursor-pointer bg-slate-400/30 rounded-full p-2"
+            animate={{ y: [0, 12, 0] }}
+            transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
+            onClick={Scroll}
+          >
+            <ArrowDown className="h-8 w-8 text-indigo-500" />
           </motion.div>
 
           <motion.div
