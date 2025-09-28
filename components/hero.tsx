@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import { ArrowDown, ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 import { TypeAnimation } from "react-type-animation"
 
-
 export function Hero() {
 
   const handleScroll = () => {
@@ -15,6 +14,7 @@ export function Hero() {
   const Scroll = () => {
     const el = document.getElementById("work")
     el?.scrollIntoView({ behavior: "smooth" })
+
   }
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
@@ -73,15 +73,15 @@ export function Hero() {
           >
             <TypeAnimation
               sequence={[
-                "Software Engineer",
+                "Software Developer",
                 1000,
                 "Java Developer",
                 1000,
+                "Spring Boot Developer",
+                1000,
+                "Database Developer",
+                1000,
                 "MERN Stack Developer",
-                1000,
-                "PHP Developer",
-                1000,
-                "SAP ABAP Backend Developer",
                 1000,
               ]}
               wrapper="span"
@@ -186,4 +186,3 @@ export function Hero() {
     </section>
   )
 }
-

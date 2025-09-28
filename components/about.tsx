@@ -75,7 +75,9 @@ export function About() {
               </div>
             </div>
 
-            <button className="px-6 py-2 border border-indigo-500 text-indigo-400 rounded-full hover:bg-indigo-500/10 transition-colors duration-300">
+            <button className="px-6 py-2 border border-indigo-500 text-indigo-400 rounded-full hover:bg-indigo-500/10 transition-colors duration-300"
+              onClick={() => window.open("/CV_Jitendra_Kumar_Swain_2025.pdf", "_blank")}
+            >
               Download Resume
             </button>
           </motion.div>

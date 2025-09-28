@@ -63,7 +63,11 @@ export function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.8 }}
           >
-            <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600" onClick={() => window.open("/Jitendra_Kumar_Swain_Resume.pdf", "_blank")}>
+            <Button
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+              // onClick={() => window.location.href = "./Resume"}
+              onClick={() => window.open("/CV_Jitendra_Kumar_Swain_2025.pdf", "_blank")}
+            >
               Resume
             </Button>
           </motion.div>
@@ -102,7 +106,12 @@ export function Navbar() {
                 {item.name}
               </a>
             ))}
-              <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 w-full" >
+              <Button
+                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 w-full"
+                // onClick={() => window.location.href = "/resume"}
+                onClick={() => window.open("/CV_Jitendra_Kumar_Swain_2025.pdf", "_blank")}
+
+              >
                 Resume
               </Button>
           </div>
