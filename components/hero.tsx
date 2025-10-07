@@ -68,7 +68,7 @@ export function Hero() {
               transition={{ duration: 2, repeat: Infinity }}
             />
             <img
-              src="./avatar.png"
+              src="./avatar.jpg"
               alt="Profile"
               className="relative w-36 h-36 rounded-full border-4 border-white shadow-lg"
             />
