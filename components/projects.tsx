@@ -1,16 +1,23 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useAnimateInView } from "@/hooks/use-animation"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ExternalLink, Github } from "lucide-react"
+import { motion } from "framer-motion";
+import { useAnimateInView } from "@/hooks/use-animation";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Github } from "lucide-react";
 
 export function Projects() {
-  const { ref, controls, variants } = useAnimateInView()
+  const { ref, controls, variants } = useAnimateInView();
 
   const projects = [
-        {
+    {title: "EMS, An Employee Management Platform",
+      description:
+        "A SpringBoot based project, where I include CURD operations to manage employees.",
+      image: "/ems.png?height=400&width=600&text=EMS",
+      tags: ["SpringBoot", "MySQL", "JavaScript", "Tailwind"],
+      github: "https://github.com/sjitendrakumar647/EmployeeManagementSystem_java_proj.git",
+      demo: "#"},
+    {
       title: "Edusphere, An E-Learning Platform",
       description:
         "A PHP-based e-learning platform with user authentication, course management, and interactive quizzes. Features responsive design and SEO optimization.",
@@ -25,7 +32,8 @@ export function Projects() {
         "Real-time chat application built with Socket.io and React. Features include private messaging, group chats, and message notifications.",
       image: "/chat.svg?height=400&width=600&text=Chat+App",
       tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "https://github.com/sjitendrakumar647/MERN_Chattrix_Chat_Application.git",
+      github:
+        "https://github.com/sjitendrakumar647/MERN_Chattrix_Chat_Application.git",
       demo: "#",
     },
     {
@@ -41,9 +49,11 @@ export function Projects() {
       title: "Hospital Management System",
       description:
         "A Hospital Management System using JDBC efficiently manages patient records, appointments, billing, and staff data with secure database connectivity in Java.",
-      image: "https://www.karexpert.com/wp-content/uploads/2022/01/HIMS7-1.jpg?height=400&width=600&text=Hospital+Management",
+      image:
+        "https://www.karexpert.com/wp-content/uploads/2022/01/HIMS7-1.jpg?height=400&width=600&text=Hospital+Management",
       tags: ["Java", "MySQL", "JDBC"],
-      github: "https://github.com/sjitendrakumar647/HospitalManagementSystem.git",
+      github:
+        "https://github.com/sjitendrakumar647/HospitalManagementSystem.git",
       demo: "#",
     },
     {
@@ -55,7 +65,7 @@ export function Projects() {
       github: "#",
       demo: "#",
     },
-    
+
     {
       title: "Weather Forecast App",
       description:
@@ -65,20 +75,28 @@ export function Projects() {
       github: "#",
       demo: "#",
     },
-
-  ]
+  ];
 
   return (
     <section id="projects" className="py-20 bg-background/50">
       <div className="container mx-auto px-4">
-        <motion.div ref={ref} initial="hidden" animate={controls} variants={variants} className="text-center mb-16">
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={variants}
+          className="text-center mb-16"
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             My{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">Projects</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
+              Projects
+            </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mb-8"></div>
           <p className="text-foreground/70 max-w-3xl mx-auto text-lg">
-            Check out some of my recent projects that showcase my skills and expertise.
+            Check out some of my recent projects that showcase my skills and
+            expertise.
           </p>
         </motion.div>
 
@@ -104,8 +122,12 @@ export function Projects() {
                   />
                 </div>
                 <CardContent className="p-6 flex-grow">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-foreground/70 mb-4">{project.description}</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-foreground/70 mb-4">
+                    {project.description}
+                  </p>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {project.tags.map((tag) => (
                       <span
@@ -119,13 +141,25 @@ export function Projects() {
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex justify-between">
                   <Button variant="outline" size="sm" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Github className="mr-2 h-4 w-4" />
                       Code
                     </a>
                   </Button>
-                  <Button size="sm" className="bg-gradient-to-r from-purple-500 to-pink-500" asChild>
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="sm"
+                    className="bg-gradient-to-r from-purple-500 to-pink-500"
+                    asChild
+                  >
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Demo
                     </a>
@@ -144,7 +178,11 @@ export function Projects() {
           className="text-center mt-12"
         >
           <a href="#projects" className="inline-block">
-            <Button size="lg" variant="outline" className="border-purple-500 text-purple-500 hover:bg-purple-500/10">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-purple-500 text-purple-500 hover:bg-purple-500/10"
+            >
               View All Projects
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>
@@ -152,6 +190,5 @@ export function Projects() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

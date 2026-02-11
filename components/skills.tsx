@@ -6,7 +6,7 @@ import { useAnimateInView } from "@/hooks/use-animation"
 
 // icon
 import { FaNodeJs, FaReact,FaJava,FaPython,FaPhp,FaGithub,FaHtml5,FaCss3,FaBootstrap  } from "react-icons/fa6";
-import { SiExpress, SiMongodb,SiMysql,SiTailwindcss } from "react-icons/si";
+import { SiExpress, SiMongodb,SiMysql,SiSpringboot,SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 
 
@@ -48,7 +48,7 @@ export function Skills() {
   ]
   const technologies = [
     {name: "Java", icon: <FaJava  className="text-indigo-400" size={100} />},
-    {name: "SpringBoot", icon: <FaSpringBoot  className="text-indigo-400" size={100} />},
+    {name: "SpringBoot", icon: <SiSpringboot  className="text-green-800" size={100} />},
     {name: "React", icon: <FaReact className="text-sky-400" size={100} />},
     {name: "MongoDB", icon: <SiMongodb className="text-green-500" size={100} />},
     {name: "Python", icon: <FaPython  className="text-indigo-500" size={100} />},

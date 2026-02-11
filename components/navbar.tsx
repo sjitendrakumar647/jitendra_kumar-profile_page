@@ -109,7 +109,7 @@ export function Navbar() {
               <Button
                 className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 w-full"
                 // onClick={() => window.location.href = "/resume"}
-                onClick={() => window.open("/CV_Jitendra_Kumar_Swain_2025.pdf", "_blank")}
+                onClick={() => window.open("/CV_Jitendra_Kumar_Swain_2026.pdf", "_blank")}
 
               >
                 Resume
