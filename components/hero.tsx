@@ -127,8 +127,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="text-white/80 max-w-xl mb-8 text-lg text-center"
         >
-          A passionate MCA graduate and fresher software engineer with expertise in Java, Python, PHP, and MERN stack
-          development. Building innovative solutions to solve real-world problems.
+          MCA graduate specializing in Java and Full-Stack Development, with experience in building scalable applications using Spring Boot, Hibernate, and REST APIs. Skilled in React, SQL, and modern web technologies to develop efficient and user-friendly solutions.
         </motion.p>
 
         {/* Buttons */}
